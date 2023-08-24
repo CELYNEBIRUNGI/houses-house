@@ -204,19 +204,19 @@
   
   .section-subtitle {
     color: var(--orange-soda);
-    font-size: var(--fs-5);
+    font-size: 35px ;
     font-weight: var(--fw-600);
     padding: 5px 20px;
     background: hsla(9, 100%, 62%, 0.1);
     width: max-content;
     border-radius: 50px;
     margin-inline: auto;
-    margin-bottom: 15px;
+    margin-bottom: 35px;
   }
   
   .section-title {
     text-align: var(--text-align, center);
-    margin-bottom: var(--margin-bottom, 50px);
+    margin-bottom: var(--margin-bottom, 60px);
   }
   
   .card-badge {
@@ -276,11 +276,13 @@
   .header {
     position: relative;
     z-index: 2;
+    padding-bottom: 70%;
   }
   
   .header-top {
     background: var(--prussian-blue);
     padding-block: 15px;
+    padding-top: 60%;
   }
   
   .header-top .container,
@@ -341,9 +343,16 @@
   .header-bottom {
     background: var(--white);
     padding-block: 25px;
+    padding-top: 56%;
   }
   
-  .header-bottom .logo img { margin-inline: auto; }
+  .header-bottom .logo img {
+     margin-inline: auto; 
+    width: 52%;
+  padding-top: 2%;
+  padding-left:25%;
+  
+    }
   
   .navbar {
     background: var(--white);
@@ -358,12 +367,13 @@
     padding: 60px 20px;
     visibility: hidden;
     transition: 0.15s ease-in;
+    
   }
   
   .navbar.active {
     visibility: visible;
     transform: translateX(310px);
-    transition: 0.25s ease-out;
+    transition: 1.25s ease-out;
   }
   
   .navbar-top {
@@ -375,12 +385,13 @@
     margin-bottom: 25px;
   }
   
-  .navbar-top .logo img { width: 200px; }
+  .navbar-top .logo img { width: 20px; }
   
   .nav-close-btn ion-icon {
     font-size: 20px;
     --ionicon-stroke-width: 45px;
     padding: 5px;
+    width: 35%;
   }
   
   .navbar-link {
@@ -499,31 +510,58 @@
   .about-banner > img {
     max-width: max-content;
     width: 100%;
+    height: 100%;
   }
   
   .about-banner .abs-img {
     position: absolute;
     bottom: 100px;
-    left: 15px;
-    width: 50%;
+    left: 20px;
+    width: 100%;
     border-radius: 4px;
   }
   
-  .about .section-subtitle { margin-inline: 0; }
+  .about .section-subtitle {
+     margin-inline: 40%; 
+    font-size:40px;
+    }
   
   .about .section-title {
     --text-align: left;
     --margin-bottom: 15px;
+    margin-inline: 30%;
+  }
+  .slideshow-container {
+    max-width: 1500px;
+    position: relative;
+    margin: auto;
   }
   
+
+  .about img {
+    padding-top: 70px;
+    height: auto;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 45px;
+    width: 100%;
+    border-radius:10%;
+  }
+  
+
   .about-text {
     color: var(--cadet);
     font-size: var(--fs-5);
     line-height: 1.7;
     margin-bottom: 30px;
+    margin-inline: 10%;
   }
   
-  .about-list { margin-bottom: 30px; }
+  .about-list {
+     margin-bottom: 30px;
+     margin-inline: 20%;
+                       
+  }
   
   .about-item {
     display: flex;
@@ -561,6 +599,7 @@
     padding: 20px 25px;
     border-left: 4px solid var(--orange-soda);
     margin-bottom: 40px;
+    margin-inline: 20%;
   }
   
   .about .btn {
@@ -1054,7 +1093,12 @@
   
   .footer-brand { margin-bottom: 70px; }
   
-  .footer-brand .logo { margin-bottom: 15px; }
+  .footer-brand .logo { 
+    margin-bottom: 15px;
+    width: 15%;
+    padding-left: 20%;
+
+   }
   
   .section-text {
     font-size: var(--fs-5);
@@ -1302,9 +1346,11 @@
      * ABOUT
      */
   
-    .about .section-title { max-width: 30ch; }
+    .about .section-title { max-width: 40ch;
+    
+    }
   
-    .about-text { max-width: 55ch }
+    .about-text { max-width: 270ch }
   
     .about-list {
       display: grid;
@@ -1435,7 +1481,7 @@
   
     .about-banner { margin-bottom: 0; }
   
-    .about-banner > img { width: 100%; }
+    .about-banner > img { width: 100%;  height: 100%;}
   
   
   
