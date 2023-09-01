@@ -403,6 +403,60 @@
   }
   
   .navbar-link:is(:hover, :focus) { color: var(--orange-soda); }
+
+  @media (min-width: 575.98px) {
+    .navbar {
+      background: var(--white);
+      position: fixed;
+      top: 0;
+      left: -310px;
+      max-width: 300px;
+      width: 100%;
+      height: 100%;
+      box-shadow: 0 3px 10px hsla(0, 0%, 0%, 0.3);
+      z-index: 5;
+      padding: 60px 20px;
+      visibility: hidden;
+      transition: 0.15s ease-in;
+      
+    }
+    
+    .navbar.active {
+      visibility: visible;
+      transform: translateX(310px);
+      transition: 1.25s ease-out;
+    }
+    
+    .navbar-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 40px;
+      border-bottom: 1px solid var(--cultured-1);
+      margin-bottom: 25px;
+    }
+    
+    .navbar-top .logo img { width: 20px; }
+    
+    .nav-close-btn ion-icon {
+      font-size: 20px;
+      --ionicon-stroke-width: 45px;
+      padding: 5px;
+      width: 35%;
+    }
+    
+    .navbar-link {
+      color: var(--cadet);
+      font-size: var(--fs-5);
+      font-weight: var(--fw-600);
+      text-transform: uppercase;
+      padding-block: 15px;
+    }
+    
+    .navbar-link:is(:hover, :focus) { color: var(--orange-soda); }
+  
+
+  }
   
   .overlay {
     position: fixed;
@@ -545,7 +599,7 @@
     padding-right: 60px;
     padding-bottom: 45px;
     width: 100%;
-    border-radius:10%;
+    border-radius:6%;
   }
   
 
