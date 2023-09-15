@@ -385,7 +385,9 @@
     margin-bottom: 25px;
   }
   
-  .navbar-top .logo img { width: 20px; }
+  .navbar-top .logo img { 
+    max-width: 15%; 
+  }
   
   .nav-close-btn ion-icon {
     font-size: 20px;
@@ -436,7 +438,8 @@
       margin-bottom: 25px;
     }
     
-    .navbar-top .logo img { width: 20px; }
+    .navbar-top .logo img { width: 20px;
+    height: 20%; }
     
     .nav-close-btn ion-icon {
       font-size: 20px;
@@ -1151,6 +1154,7 @@
     margin-bottom: 15px;
     width: 15%;
     padding-left: 20%;
+    object-fit: contain;
 
    }
   
@@ -1166,7 +1170,11 @@
     gap: 15px;
     margin-bottom: 30px;
   }
-  
+  .footer-img{
+    max-width: 45%;
+    max-height: 13%;
+    object-fit: 45%;
+  }
   .contact-link {
     display: flex;
     align-items: flex-start;
