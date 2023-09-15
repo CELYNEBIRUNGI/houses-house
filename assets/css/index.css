@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
 *{
+    background-image: url('assets/images/construction.jpg');
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -14,7 +15,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #868a93;
+    background-image: url('/assets/images/blue\ print 4.png');
     column-gap: 30px;
     padding-top: 5%;
 }
